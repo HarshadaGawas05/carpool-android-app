@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".Fragments.CreateRideFragment">
+
+    <EditText
+        android:id="@+id/RiderNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Rider Name"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/SourceAddressEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Source Address"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/DestinationAddressEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Destination Address"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/TotalPassengersEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Total Passengers"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/RidePriceEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Ride Price"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+        <EditText
+        android:id="@+id/PhoneNumberEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/VehicleNumberEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Vehicle Number"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/VehicleModelEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Vehicle Model"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/VehicleColorEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Vehicle Color"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/RideDateEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Ride Date"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:focusable="false"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/RideTimeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Ride Time"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_background"
+        android:clickable="true"
+        android:focusable="false"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/CreateRideBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_style"
+        android:textColor="@color/white"
+        android:text="Create Ride"
+        android:fontFamily="@font/main"/>
+
+    </LinearLayout>
+</ScrollView>

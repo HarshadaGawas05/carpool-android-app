@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CarPool</string>
+    <string name="default_web_client_id">YOUR_DEFAULT_WEB_CLIENT_ID_HERE</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyBewGuU86dxJK-1BbHuCk_MkIOGyD4iYnw
+    </string>
+</resources>

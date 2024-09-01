@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_background"
+    tools:context=".Activities.EditDetailsActivity"
+    android:padding="10dp">
+
+    <!-- Other views -->
+
+    <EditText
+        android:id="@+id/updateNameEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="Update Name"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/updateEmailEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Update Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/updateNameEditTxt"
+        android:textColorHint="@android:color/white"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/updatePhoneNumberEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/updateEmailEditTxt"
+        android:layout_marginTop="20dp"
+        android:hint="Update Phone Number"
+        android:inputType="phone"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/edit_text_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Gender:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/updatePhoneNumberEditTxt"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main"
+        />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/genderLabel"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/main"/>
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/main"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitDetailsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="@drawable/btn_style"
+        android:layout_below="@id/genderRadioGroup"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling"
+        android:fontFamily="@font/main"/>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/signup_background">
+
+    <TextView
+        android:id="@+id/textViewRiderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rider Name:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewSourceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Address:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewDestinationAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination Address:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewRidePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Price:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewRideDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Date:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewRideTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Time:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewVehicleNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Number:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewVehicleModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Model:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewVehicleColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Color:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewTotalPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Passengers:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/main"/>
+
+    <TextView
+        android:id="@+id/textViewPassengerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Will Ride With :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/main"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/passengerDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/confirmRideButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Ride"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

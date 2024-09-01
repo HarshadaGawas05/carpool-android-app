@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:background="@drawable/signup_background"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/logo_main" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logoImageView"
+        android:layout_marginTop="25dp"
+        android:text="WELCOME TO netcar"
+        android:fontFamily="@font/main"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Carpooling made easy"
+        android:fontFamily="@font/madeleina"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:layout_below="@+id/text2"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/emailEditTxt"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/main"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditTxt"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style"
+        android:text="Get Started"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/main"/>
+
+    <Button
+        android:id="@+id/googleSignUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up with Google"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_style"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/main"/>
+
+</RelativeLayout>
